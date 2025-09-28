@@ -1,9 +1,9 @@
 /*Your Code Here*/
+/*Write selector/rule property to add your border when
+links in the navigation are in the hover or focus state.*/
 nav a:hover, nav a:focus {
 border:2px dotted purple;
 }
-/*Write selector/rule property to add your border when
-links in the navigation are in the hover or focus state.*/
 
 /*Write selector/rule property to position the default position for the skip class element*/
 .skip a{
@@ -37,6 +37,20 @@ links in the navigation are in the hover or focus state.*/
  five rows in the grid. */
 
       /*This will be a lot of rules.... but be strategic and combine selectors*/
+
+.accounts-image img,
+.onlinebanking-image img,
+.security-image img,
+.loans-image img,
+.contact-image img{
+     max-height: 675px;
+}
+
+div img{
+     width: 100%;
+     height: 100%;
+}
+
 .accounts{
      grid-column: 2/ span 3;
      grid-row: 2;
@@ -86,37 +100,26 @@ links in the navigation are in the hover or focus state.*/
      grid-row: 6;
 }
 
-.accounts-image img,
-.onlinebanking-image img,
-.security-image img,
-.loans-image img,
-.contact-image img{
-     max-height: 675px;
-     /* overflow: hidden; */
-}
 
-div img{
-     width: 100%;
-     height: 100%;
-}
-
+ /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
      text-align: center;
      margin: auto;
-     justify-self: center;
-     align-self: start;
+     justify-self: start;
+     align-self: center;
 }
 .text-block li{
      text-align: left;
 }
-
+/* Add your media query here */
+/* Step 10: Write the selector/rule property to style the nav element */
 @media screen and (min-width: 825px) {
      nav {
      text-align: right;   
      padding: 35px 0px;   
   }
 }
-
+ /* Steps 12 - 15: Update the grid-column property of the grid's children (where-needed)*/
 .container{
      display: grid;
      grid-template-columns: repeat(7,1fr);
@@ -144,7 +147,7 @@ div img{
 .loans-image{
      grid-column: 3/span 5;
 }
-
+ /* Step 16:Write the selector/rule property to update the .text-block class */
  .text-block{
      max-height: 235px;
      overflow: auto;
@@ -154,27 +157,15 @@ div img{
 
 
 
-/* Steps 6 and 7: Write the selector/rule properties to  place the next five elements in the next
- five rows in the grid. */
 
-      /*This will be a lot of rules.... but be strategic and combine selectors*/
-
-
- /* Step 8: Write the selector/rule property to style the .text-block class. */
-
-
-/* Add your media query here */
-
-
-  /* Step 10: Write the selector/rule property to style the nav element */
 
  
-  /* Step 11: Write the selector/rule property to update the .container class */
+
+ 
 
 
-  /* Steps 12 - 15: Update the grid-column property of the grid's children (where-needed)*/
 
 
 
- /* Step 16:Write the selector/rule property to update the .text-block class */
+
 
